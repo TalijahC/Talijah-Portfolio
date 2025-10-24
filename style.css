@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -19,6 +19,7 @@ body {
 .logo {
     font-size: 1.3rem;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     color: #333;
 }
 
@@ -34,6 +35,7 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     transition: color 0.3s ease;
 }
 
@@ -60,17 +62,21 @@ body {
 }
 
 .about-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 .about-text p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: left;
 }
 
 .about-buttons .btn{
+    font-family: 'Poppins', sans-serif;
     display: inline-block;
     margin-right: 10px;
     padding: 10px 20px;
@@ -107,6 +113,8 @@ body {
 }
 
 .skills-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
   text-align: center;
   font-size: 35px;
 }
@@ -138,17 +146,147 @@ body {
 }
 
 .skills-section .cells .cell span {
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
 
+#projects h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 35px;
+}
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  padding: 1.5rem 10%;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+}
 
-#projects {
-    text-align: center;
-    padding: 2rem 0;
+.project-card {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 6px 18px rgba(15, 15, 15, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  height: 100%;
+}
+
+.project-card h3 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #555;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15, 15, 15, 0.12);
+  border-color: #007BFF;
+  outline: none;
 }
 
 #contact {
     text-align: center;
     padding: 2rem 0;
+}
+
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:600;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.contact-section .group .text {
+  flex: 0 0 35%;
+  max-width: 380px;
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 1.03rem;;
+}
+
+.contact-section .group form {
+  flex: 0 0 60%;
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-section .group form label {
+  text-align: left;
+  margin-bottom: 6px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #007BFF;
+  background-color: transparent;
+  padding: 12px;
+  margin-bottom: 18px;
+  outline: none;
+  border-radius: 6px;
+}
+
+
+.contact-section .group form textarea {
+  min-height: 320px; 
+  resize: vertical;
+}
+
+
+.contact-section .group form button {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(.95);
 }

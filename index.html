@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talijah Clayton | Porfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
       <header> 
@@ -30,9 +31,10 @@
                   I'm excited to share my journey and experiences with you through this website!
                 </p>
                 <div class="about-buttons">
-                  <a href="skills" class="btn">Skills</a>
-                  <a href="projects" class="btn">Projects</a>
-                  <a href="contact" class="btn">Contact</a>
+                  <a class="btn" href="https://github.com/TalijahC" target="_blank">GitHub</a>
+                  <a class="btn" href="https://www.linkedin.com/in/talijah-clayton-4910b926b/" target="_blank">Linkedin</a>
+                  <a class="btn" href="Resume.pdf" target="_blank">Resume</a>
+                  
                 </div>
                 </div>
                 <div class="about-image">
@@ -63,25 +65,46 @@
             </section>
             <section id="projects">
               <h2>Projects</h2>
-              <ul>
-                <li><a href="" target="_blank">Project 1: E-Portfolio</a>
+              <div class="projects-grid">
+                <a class="project-card" href="" target="_blank" aria-label="Open E-portfolio on Github">
+                  <h3>Project 1: Personal Website</h3>
                   <p>A personal multi-page website that features a profile, schedule, and account creation form.</p>
-                </li>
-                <li><a href="" target="_blank">Project 2: Form Validation</a>
+              </a>
+
+                <a class="project-card" href="" target="_blank" aria-label="Open Form Validation Project on Github">
+                <h3>Project 2: Form Validation</h3>
                   <p> A payment processing web page that validates user input using JavaScript.</p>
-                </li>
-                <li><a href="" target="_blank">Project 3: iOS Trivia App</a>
+                </a>
+
+                <a class="project-card" href="" target="_blank" aria-label="Open iOS Trivia App Project on Github">
+                  <h3>Project 3: iOS Trivia App</h3>
                   <p>A simple iOS app that displays questions for user to take a quiz.</p>
-                </li>
-              </ul>
+                </a>
+              </div>
             </section>
-            <section id="contact">
+            <section id="contact" class="contact-section">
               <h2>Contact</h2>
-              <p>
-                Feel free to reach out to me via email at 
-                <a href="mailto:talijahclayton1@gmail.com">talijahclayton1@gmail.com</a>
-              </p>
-            </section>
+
+              <div class="group">
+                <div class="text">
+                  <p>If you would like to get in touch with me, please fill out the form below or reach out to me via email at <a href="mailto:talijahclayton1@gmail.com">talijahclayton1@gmail.com</a>. 
+                  I'm happy to connect about projects, collaborations, or any opportunities. I usually respond within a couple of days!</p>
+                </div>
+
+              <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Send Message</button>
+              </form>
+            </div>
+        </section>
       </main>
 
       <footer>
